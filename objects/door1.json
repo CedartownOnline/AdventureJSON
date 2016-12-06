@@ -1,0 +1,56 @@
+{
+  "title": "Door",
+  "description": "A strong wooden door.",
+  "states": {
+    "opened": {
+      "name": "opened",
+      "actions": [
+        {
+          "name": "lock",
+          "require": "key1",
+          "newState": "locked"
+        },
+        {
+          "name": "close",
+          "require": "key1",
+          "newState": "closed"
+        }
+      ]
+    },
+    "closed": {
+      "actions": [
+        {
+          "name": "lock",
+          "require": "key1",
+          "newState": "locked"
+        },
+        {
+          "name": "open",
+          "newState": "opened"
+        }
+      ]
+    },
+    "locked": {
+      "actions": [
+        {
+          "name": "unlock",
+          "require": "key1",
+          "newState": "unlocked"
+        }
+      ]
+    },
+    "unlocked": {
+      "actions": [
+        {
+          "name": "lock",
+          "require": "key1",
+          "newState": "locked"
+        },
+        {
+          "name": "open",
+          "newState": "opened"
+        }
+      ]
+    }
+  }
+}

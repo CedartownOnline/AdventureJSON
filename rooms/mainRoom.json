@@ -1,0 +1,70 @@
+{
+  "title": "Main Entrance",
+  "firstVisit": "Upon exiting the staircase you enter a dark room with corridors lead off in multiple directions.",
+  "repeatVisit": "You enter a dark room with corridors lead off multiple directions.",
+  "exits": [
+    {
+      "direction": "North",
+      "portal": "open"
+    },
+    {
+      "direction": "West",
+      "portal": {
+        "object": "exit"
+      }
+    },
+    {
+      "direction": "South",
+      "portal": {
+        "object": "door1",
+        "state": "locked",
+        "dif": 2,
+        "room": 2
+      }
+    },
+    {
+      "direction": "South-East",
+      "portal": {
+        "object": "door1",
+        "state": "locked",
+        "dif": 8,
+        "adjustId": 100,
+        "room": 3
+      }
+    },
+    {
+      "direction": "South-West",
+      "portal": {
+        "object": "door1",
+        "state": "unlocked",
+        "dif": 1,
+        "room": 4
+      }
+    }
+  ],
+  "creatures": [
+    1,
+    null,
+    null,
+    null,
+    1,
+    null,
+    null
+  ],
+  "objects": [
+    {
+      "id": 1,
+      "hidden": [
+        {
+          "id": 1,
+          "adjust": [
+            {
+              "id": 100,
+              "dif": -7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "snake",
+  "description": "a long black snake",
+  "mnoccur": 1,
+  "mxoccur": 6,
+  "attack": [{
+    "desc": "bite",
+    "damage": 2,
+    "chance": 3
+  }]
+}

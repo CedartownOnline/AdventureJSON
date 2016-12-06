@@ -1,0 +1,22 @@
+{
+  "title": "body",
+  "description": "dead human body",
+  "states": {
+    "unsearched": {
+      "name": "unsearched",
+      "actions": [
+        {
+          "name": "search",
+          "newState": "search",
+          "dif": 0
+        },
+        {
+          "name": "close",
+          "require": "key1",
+          "newState": "closed"
+        }
+      ]
+    }
+  }
+
+}
