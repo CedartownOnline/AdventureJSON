@@ -1,0 +1,6 @@
+{
+  "title": "Exit Game",
+  "description": "Exit the Dungeon",
+  "requires": null,
+  "action": "quit"
+}

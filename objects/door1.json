@@ -1,9 +1,10 @@
 {
   "title": "Door",
-  "description": "A strong wooden door.",
+  "description": "A strong wooden door",
   "states": {
     "opened": {
       "name": "opened",
+      "blocking": false,
       "actions": [
         {
           "name": "lock",
@@ -18,6 +19,8 @@
       ]
     },
     "closed": {
+      "name": "closed",
+      "blocking": true,
       "actions": [
         {
           "name": "lock",
@@ -31,6 +34,8 @@
       ]
     },
     "locked": {
+      "name": "locked",
+      "blocking": true,
       "actions": [
         {
           "name": "unlock",
@@ -40,6 +45,8 @@
       ]
     },
     "unlocked": {
+      "name": "unlocked",
+      "blocking": false,
       "actions": [
         {
           "name": "lock",
